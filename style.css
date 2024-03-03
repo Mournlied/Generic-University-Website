@@ -1,0 +1,256 @@
+body{
+    background: rgb(0, 0, 82);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-box{
+    padding: 15px;
+    color: white;
+}
+
+.header-logo{
+    width: 151px;
+    display: inline;
+}
+
+.sidebar{
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 151px; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 10px; /* Place content 10px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: rgb(0, 0, 82);
+}
+
+.sidebar a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover{
+    color: gold;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+.logout-button{
+    display: inline;
+    position: absolute;
+    top: 70px;
+    right: 5%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: goldenrod;
+    border: none;
+    border-radius: 5px;
+    transition: 500ms all;
+    cursor: pointer;
+}
+
+.logout-button:hover{
+    background: gold;
+    transform: scale(1.1);
+}
+
+#open-sidebar{
+    display: block;
+}
+
+
+.main-box{
+    background: white;
+    margin: 8px;
+    padding: 15px;
+}
+
+.section-title{
+    font-size: 2em;
+}
+
+.container-input{
+    text-align: left;
+    margin: 20px;
+    width: 50%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #FFF;
+    padding: 0.5rem;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+.key-input{
+    margin: 20px;
+    border-radius: 5px;
+    height: 35px;
+    font-family: sans-serif;
+    padding: 0.5rem;
+    font-size: 24px;
+    border-width: 0.5px;
+    width: 330px;
+}
+
+.submit-button{
+    display: inline-block;
+    text-align: left;
+    padding: 15px;
+    margin: 0 0 20px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: goldenrod;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 500ms all;
+}
+
+.submit-button:hover{
+    background: gold;
+    transform: scale(1.1);
+}
+
+.refresh-button{
+    display: inline-block;
+    padding: 15px;
+    margin: 0 20px 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: goldenrod;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 500ms all;
+}
+
+.refresh-button:hover{
+    background: gold;
+    transform: scale(1.1);
+}
+
+
+.results-title{
+    display: none;
+    font-size: 1.3em;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.results-box{
+    display: none;
+    text-align: left;
+    margin: 20px;
+    width: 50%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #FFF;
+    padding: 0.5rem;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+.copy-button{
+    display: none;
+    padding: 15px;
+    margin: 0 20px 20px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: goldenrod;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 500ms all;
+}
+
+.copy-button:hover{
+    background: gold;
+    transform: scale(1.1);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+  
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.footer-box{
+    color: white;
+    text-align: center;
+    height: 50px;
+}
+
+textarea {
+    resize: none; /* Disable textarea resizing */
+    overflow-y: hidden; /* Hide vertical scrollbar initially */
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+@media screen and (max-width:940px){
+    .key-input{
+        width: auto;
+    }
+
+    .key-input, .container-input, .copy-button, .submit-button, #refresh-button, .results-box, .results-title, .refresh-button{
+        font-size: 18px;
+        margin-left: 0;
+    }
+
+    #refresh-button{
+        display: block;
+        position: relative;
+    }
+}
