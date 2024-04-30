@@ -1,4 +1,4 @@
-# Generic-University-Website-Template
+# Generic-University-Website
 <h1>WIP version 0.1</h1>
 <p>Website for students services for a generic university</p>
 <p>-The home page display important news and updates (WIP)</p>
